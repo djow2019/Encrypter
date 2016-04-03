@@ -52,7 +52,7 @@ public class Encrypter {
 
 			for (int j = 0; j < times; j++) {
 				result += (char) character;
-				character = random.nextInt(END_ASCII - 1);
+				character = random.nextInt(END_ASCII - 1 - BOTTOM) + BOTTOM;
 			}
 
 			result += (char) END_ASCII;
