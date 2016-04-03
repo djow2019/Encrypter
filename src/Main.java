@@ -34,13 +34,16 @@ public class Main {
 
 		String input = scanner.nextLine();
 
-		Encrypter encryptor = new Encrypter();
+		Encrypter encrypter = new Encrypter();
 
 		// constantly runs until input is blank
 		while (!input.equals("")) {
 
+			// either encrypts or decrypts the data
 			if (encrypt)
-				System.out.println(encryptor.encrypt(input));
+				System.out.println(encrypter.encrypt(input));
+			else
+				System.out.println(encrypter.decrypt(input));
 
 			// sets the encrypt mode
 			System.out.println("Type e for encrypt mode or d for decrypt mode: ");
