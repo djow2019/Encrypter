@@ -1,7 +1,15 @@
 import java.util.Scanner;
 
+/**
+ * @author Derek
+ * Main class that runs the program
+ */
 public class Main {
 
+	/**
+	 * First method that is called when executing this program
+	 * @param args run time arguments
+	 */
 	public static void main(String[] args) {
 
 		// reads input
